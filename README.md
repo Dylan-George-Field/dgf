@@ -4,7 +4,7 @@ Eg, "today", "yesterday", "2 days ago", "over 1 month ago", "over a year ago" et
 
 I made this for Wordpress, add this to the file that will be calling it.
 
-include "your-path-to-file/youtubeDateChanger.php";
+  include "your-path-to-file/youtubeDateChanger.php";
 
 Usage (in the loop):
-echo youtubeDateChanger(get_the_time('d/m/Y'));
+  echo youtubeDateChanger(get_the_time('d/m/Y'));
