@@ -14,7 +14,7 @@ function youtubeDateChanger ($date) {
 	
 	$counter = $interval->format('%a');
 	
-	echo $counter;
+	//echo $counter;
 	
 	if ( $counter == 0 ) {
 		$result = "today";
