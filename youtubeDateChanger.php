@@ -15,14 +15,12 @@ function youtubeDateChanger ($date) {
 	
 	$counter = $interval->format('%a');
 	
-	echo $counter;
-	
 	if ( $counter == 0 ) {
 		$result = "today";
 	} elseif ( $counter == 1 ) {
 		$result = "yesterday";
 	} elseif ( $counter >= 2 && $counter < 7 ) {
-		$result = "over 3 days ago";
+		$result = "3 days ago";
 	} elseif ( $counter >= 7 && $counter < 14 ) {
 		$result = "1 week ago";
 	} elseif ($counter >= 14 && $counter < 21 ) {
@@ -34,23 +32,23 @@ function youtubeDateChanger ($date) {
 	} elseif ($counter >= 31 && $counter < 38 ) {
 		$result = "1 month ago";
 	} elseif ($counter >= 38 && $counter < 61 ) {
-		$result = "over 1 month ago";
+		$result = "1 month ago";
 	} elseif ($counter >= 61 && $counter < 92 ) {
 		$result = "2 months ago";
 	} elseif ($counter >= 92 && $counter < 183 ) {
-		$result = "over 3 months ago";
+		$result = "3 months ago";
 	} elseif ($counter >= 183 && $counter < 365 ) {
-		$result = "over 6 months ago";
+		$result = "6 months ago";
 	} elseif ($counter >= 365 && $counter < 730 ) {
-		$result = "over 1 year ago";
+		$result = "1 year ago";
 	} elseif ($counter >= 730 && $counter < 1095 ) {
-		$result = "over 2 years ago";
+		$result = "2 years ago";
 	} elseif ($counter >= 1095 && $counter < 1825 ) {
-		$result = "over 3 years ago";
+		$result = "3 years ago";
 	} elseif ($counter >= 1825 && $counter < 3650 ) {
-		$result = "over 5 years ago";
+		$result = "5 years ago";
 	} elseif ($counter >= 3650 ) {
-		$result = "over 10 years ago";
+		$result = "10 years ago";
 	}
 	
 	return $result;
